@@ -74,6 +74,11 @@ function doubleWithForLoop(arr) {
 }
 const doubleForResult = doubleWithForLoop([1, 2, 3]);
 
+function doubleWithMapOld(arr) {
+  return arr.map(function(item){
+    return item * 2;
+  })
+}
 const doubleWithMap = arr => arr.map(x => x * 2);
 const doubleMapResult = doubleWithMap([1, 2, 3]);
 
@@ -82,7 +87,7 @@ const doubleMapResult = doubleWithMap([1, 2, 3]);
 function getAgesWithForLoop(birthYears) {
   const ages = [];
   for (let i = 0; i < birthYears.length; i++) {
-    let age = 2018 - birthYears[i];
+    let age = 2020 - birthYears[i];
     ages.push(age);
   }
 }

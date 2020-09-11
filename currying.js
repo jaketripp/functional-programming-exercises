@@ -32,7 +32,7 @@ const isFrom = requiredCountry => ({ born }) => requiredCountry === born;
 
 const isAmerican = isFrom("US");
 
-const americans = people.filter(person => isAmerican(person.born));
+const americans = people.filter(isAmerican);
 
 const hasBoatLoadsOfMoney = ({ money }) => money >= 100000000;
 
