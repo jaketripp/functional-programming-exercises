@@ -27,6 +27,7 @@ function impureMain() {
 console.assert(impureMain() === 54)
 
 // PURE - stops people from mutating things, easy to test, compartmentalized
+// If I ever had to change a pure function, I know that it won't *secretly* break something elese. 
 
 
 const PURE_TAX = 20;
