@@ -86,6 +86,11 @@ const agesMapResult = getAgesWithForLoop([1975, 1997, 2002, 1995, 1985]);
 
 
 
+// FILTER
+// You have a function, A => Boolean
+// You have an array of A, [A]
+// [A].filter(A => Boolean) returns an array of A, [A], where all As returned true
+
 const people = [
   { name: "Peter", age: 16 },
   { name: "Mark", age: 18 },
