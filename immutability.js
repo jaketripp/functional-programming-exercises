@@ -7,6 +7,7 @@ function blackBox(arr, x, y, z) {
   const answerToLife = 42;
   const name = "Jake";
   const str = `${name} is ${num} and it's ${bool} that ${answerToLife}`;
+  // the dangerous, immutable line that makes our code a lot more complex
   return arr.splice(0, 3);
 }
 

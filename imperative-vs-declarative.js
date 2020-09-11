@@ -34,8 +34,7 @@ function isSubsetDeclarative3(small = [], big = []) {
   return small.every(x => big.includes(x));
 }
 
-const isSubsetDeclarative4 = (small = [], big = []) =>
-  small.every(x => big.includes(x));
+const isSubsetDeclarative4 = (small = [], big = []) => small.every(x => big.includes(x));
 
 isSubsetDeclarative4([1, 2], [9, 2, 4, 7, 3, 1]);
 isSubsetDeclarative4([1, 2], [9, 2, 4, 7, 3]);

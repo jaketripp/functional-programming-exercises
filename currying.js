@@ -11,6 +11,9 @@ const people = [
   { name: "Ronald", age: 74, born: "US", money: 100000000 }
 ];
 
+// takes a threshold, then takes an object with number property, `age`
+// normally I wouldn't recommend coupling your functions so tightly to your data structure
+// this is for demo purposes and to show point-free syntax
 const isOldEnough = threshold => ({ age }) => age >= threshold;
 
 const canDrive = isOldEnough(16);
@@ -32,6 +35,7 @@ const isAmerican = isFrom("US");
 const americans = people.filter(person => isAmerican(person.born));
 
 const hasBoatLoadsOfMoney = ({ money }) => money >= 100000000;
+
 
 // maybe we should think about setting the bar a little higher 🤔
 const canBePresident = person => {

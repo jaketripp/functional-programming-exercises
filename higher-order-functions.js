@@ -1,5 +1,10 @@
 // https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad
 
+// regular declaration
+function bar(x) {
+  return x * x;
+};
+
 // assign to identifier
 const square = function(x) {
   return x * x;
@@ -40,7 +45,9 @@ function greet2(
 // returning a function - this is super contrived and not helpful, 
 // but just wanted to show that you can return a function
 const greet3 = (isFormal, name, greetFormal = formalGreeting, greetCasual = casualGreeting) => {
-  return () => isFormal ? greetFormal(name) : greetCasual(name);
+  return () => {
+    isFormal ? greetFormal(name) : greetCasual(name);
+  }
 };
 
 // now I  can call greetJake()
